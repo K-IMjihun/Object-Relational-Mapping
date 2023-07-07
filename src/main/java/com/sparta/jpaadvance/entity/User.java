@@ -18,5 +18,6 @@ public class User {
     private String name;
 
     @OneToMany(mappedBy = "user")
-    private List<Order> orderList = new ArrayList<>();
+    // 객체에서 상태를 표시하기 위한 방법. db에는 영향을 미치지 않는다
+    private List<Food> foodList = new ArrayList<>();
 }
